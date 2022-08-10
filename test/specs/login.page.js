@@ -6,6 +6,7 @@ const dashboardlocators = require('../pageobjects/dashboardlocators');
 //import allureReporter from '@wdio/allure-reporter'
 //const myworkPage = require('./myworkPage');
 //const chai = require('chai');
+//Adding a comment
   describe('Smoke Tests', async ()=> {    
   it('Validate Login Success', async ()=>{
     await Login.open();
