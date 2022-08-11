@@ -23,12 +23,12 @@ jobs:
           node-version: 16.x
 
       # Install your dependencies (with yarn, npm no matter)
-      - run: yarn install
+      - run: npm install
         name: Install dependencies
 
       # This is where you could build your app
       # You could also start your server process (take a look at https://github.com/Slashgear/slashgear.github.io/blob/source/.github/workflows/continuous-integration.yml)
 
       # Run your test with the same command you uses locally
-      - run: yarn wdio run wdio.conf.js
+      - run: npm run wdio.conf.js
         name: Running E2E tests
