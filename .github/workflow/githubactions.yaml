@@ -5,5 +5,5 @@ jobs:
   run-shell-command: 
     runs-on: ubuntu-latest
     steps: 
-      - name: Echo a string
+      - name: WebdriverIO Automation
         run: echo "Github Actions Workflow"
