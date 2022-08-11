@@ -12,7 +12,6 @@ jobs:
         - name: Install
           run: npm install
         - name: Install wdio
-          run: npm install wdio
         - name: Test
           run: npm run wdio
         - uses: actions/upload-artifact@v1
