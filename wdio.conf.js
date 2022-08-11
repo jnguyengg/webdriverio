@@ -59,7 +59,7 @@ exports.config = {
         browserName: 'chrome',
         acceptInsecureCerts: true,
          'goog:chromeOptions': {
-            args: [ '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage', '--disable-translate', '--disable-extensions', '--disable-background-networking', '--disable-sync', '--disable-default-apps', '--mute-audio', '--no-first-run', '--disable-prompt-on-repost']
+            args: [ '--headless', '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage', '--disable-translate', '--disable-extensions', '--disable-background-networking', '--disable-sync', '--disable-default-apps', '--mute-audio', '--no-first-run', '--disable-prompt-on-repost']
         },
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
