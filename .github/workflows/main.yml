@@ -1,34 +1,28 @@
-name: Continuous Integration
+name: Smoke Tests
 
-on:
-  push:
-    branches:
-      - '**'
+on: [push, pull_request]
 
 jobs:
-  build:
-    runs-on: windows-latest
+  e2e-test-on-ubuntu-with-local-chrome:
+    runs-on: ubuntu-latest
+    #runs-on: macos-latest
+    #runs-on: windows-latest
     steps:
-      # First you need to install a chromium browser in your runner
-      - name: Install Chromium
-        run: sudo apt-get install chromium-browser
-
-      # You fetch the current ref
-      - uses: actions/checkout@v2
-
-      # Use Node version above 14.x you want to use
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        run: npm install
+      - name: Test
+        run: npm run wdio -- "wdio-configs/wdio.conf.chrome.chromedriver.headless.js --cucumberOpts.tagExpression=@myTests"
+        env:
+          ENV_PATH: environment/QS
+      - name: Upload Test Reports
+        uses: actions/upload-artifact@v2
         with:
-          node-version: 16.x
-
-      # Install your dependencies (with yarn, npm no matter)
-      - run: npm install
-        name: Install dependencies
-
-      # This is where you could build your app
-      # You could also start your server process (take a look at https://github.com/Slashgear/slashgear.github.io/blob/source/.github/workflows/continuous-integration.yml)
-
-      # Run your test with the same command you uses locally
-      - run: npm run wdio
-        name: Running Smoke Tests
+          name: reports
+          path: tests/reports/
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: log/
