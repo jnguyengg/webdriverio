@@ -11,7 +11,6 @@ jobs:
             node-version: 16.15.0
         - name: Install
           run: npm install
-        - name: Install wdio
         - name: Test
           run: npm run wdio
         - uses: actions/upload-artifact@v1
