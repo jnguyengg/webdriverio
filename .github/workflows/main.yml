@@ -1,28 +1,28 @@
-name: Smoke Tests
+name: webdriverio-ci
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
-  e2e-test-on-ubuntu-with-local-chrome:
+  test:
+
     runs-on: ubuntu-latest
-    #runs-on: macos-latest
-    #runs-on: windows-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Setup
-        run: npm install
-      - name: Test
-        run: npm run wdio -- "wdio-configs/wdio.conf.chrome.chromedriver.headless.js --cucumberOpts.tagExpression=@myTests"
-        env:
-          ENV_PATH: environment/QS
-      - name: Upload Test Reports
-        uses: actions/upload-artifact@v2
-        with:
-          name: reports
-          path: tests/reports/
-      - name: Upload Logs
-        uses: actions/upload-artifact@v2
-        with:
-          name: logs
-          path: log/
+        - name: Checkout
+          uses: actions/checkout@v2
+        - uses: actions/setup-node@v1
+          with:
+            node-version: 16.3.0
+        - name: Install
+          run: npm install
+        - name: Test
+          run: BROWSERSTACK_USERNAME=${{secrets.BROWSERSTACK_USERNAME}} BROWSERSTACK_ACCESS_KEY=${{secrets.BROWSERSTACK_ACCESS_KEY}} npm run wdio
+        - uses: actions/upload-artifact@v1
+          if: failure()
+          with:
+            name: logs
+            path: logs
