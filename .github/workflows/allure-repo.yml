@@ -16,7 +16,7 @@ jobs:
         node-version: '14'
         cache: 'npm'
     - run: npm ci
-    - run: npx install
+    - run: npm install
     - run: npm run wdio
   
     - uses: actions/upload-artifact@master
