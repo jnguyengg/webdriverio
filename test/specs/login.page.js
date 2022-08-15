@@ -21,19 +21,27 @@ const dashboardlocators = require('../pageobjects/dashboardlocators');
     await dashboardlocators.openExecutivePage.click();
     await dashboardlocators.readExecutivePage.getText();
     await expect(dashboardlocators.readExecutivePage).toHaveTextContaining('Executive Dashboard');
-    const num = Number(dashboardlocators.ActiveUserCountBox.textContent)
-    if(dashboardlocators.num !== dashboardlocators.userTableCount.length){
-      console.log("Active User Count is not correct according to the amount of names")
-    }
-    else{
-      console.log("Active User Count matches the amount of names")
-    }
+
 });
   it('Validate Accounting Dashboards Page', async ()=> {
     await dashboardlocators.openAccountingPage.click();
     await dashboardlocators.readAccountingPage.getText();
     await expect(dashboardlocators.readAccountingPage).toHaveTextContaining('Accounting Dashboard');
-    await dashboardlocators.allAvailableCompanies.click();
+    await dashboardlocators.allAvailableCompanies[0].click();
+    await dashboardlocators.availableCheckboxes[2].click();
+    await dashboardlocators.availableCheckboxes[3].click();
+    await dashboardlocators.availableCheckboxes[4].click();
+    await dashboardlocators.selectPreviousDays[0].selectByAttribute('value', '30')
+    await dashboardlocators.svg1.waitForDisplayed({timeout:3000,timeOutMsg:"it is displayed" });
+    //await dashboardlocators.AccountsPayableForecast[3].scrollIntoView();
+    //await dashboardlocators.allAvailableCompanies[1].waitForDisplayed({timeout:3000, timeoutMsg:"is Displayed"});
+    browser.pause(3000)
+   // await dashboardlocators.allAvailableCompanies[0].click();
+    //await dashboardlocators.availableCheckboxes[19].click();
+    //await dashboardlocators.availableCheckboxes[20].click();
+    //await dashboardlocators.selectPreviousDays[1].selectByAttribute('value', '30')
+    //await dashboardlocators.svg2[1].waitForExist({timeout:3000,timeOutMsg:"it is displayed" });
+
     
 
 });

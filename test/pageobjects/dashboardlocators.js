@@ -52,10 +52,28 @@ class DashboardPage extends Page{
         return $("//div[@id='content-header']");
     }
     get allAvailableCompanies(){
-        return $("[title='Company 01, Company 02, Company 06, Company 07, Company 10, Company 12']");
+        return $$("[title='Company 01, Company 02, Company 06, Company 07, Company 10, Company 12']");
+    }
+    get AccountsPayableForecast(){
+        return $$(".panel-heading")
     }
     get availableCheckboxes(){
-        return (".multiselect-container li");
+        return $$(".checkbox");
+    }
+    get previousDays(){
+        return $$(".dropper timeframe widget-dropdown")
+    }
+    get selectPreviousDays(){
+        return $$("select.timeframe-select")
+    }
+    get svg1(){
+        return $("svg")
+    }
+    get svg2(){
+        return $$("svg")
+    }
+    get scrollsvg2(){
+        return $$("tspan")
     }
     //Dashboard Page Actions
    
