@@ -18,15 +18,15 @@ class LoginPage extends Page {
         
     }
     get usernameCredentials(){
-        let loginuid = "c3ZjX2F1dG9tYXRpb24="
-        let user = atob(loginuid);
+        let loginuid = "svc_automation"
+        //let user = atob(loginuid);
         
-        return user
+        return loginuid
     }
     get passwordCredentials(){
-        let loginpw = "VDNzdCBOdW0zbg=="
-        let user = atob(loginpw);
-        return user
+        let loginpw = "T3st Num3n"
+        //let user = atob(loginpw);
+        return loginpw
     }
     get userText(){
         return $("#nav_dropdown");
