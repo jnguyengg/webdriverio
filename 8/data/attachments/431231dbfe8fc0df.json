@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li[@path='/dashboard/sales']\"}\n  (Session info: headless chrome=104.0.5112.79)",
+  "stacktrace": "#0 0x56277c356b13 <unknown>\n#1 0x56277c15d688 <unknown>\n#2 0x56277c194cc7 <unknown>\n#3 0x56277c194e91 <unknown>\n#4 0x56277c1c7e34 <unknown>\n#5 0x56277c1b28dd <unknown>\n#6 0x56277c1c5b94 <unknown>\n#7 0x56277c1b27a3 <unknown>\n#8 0x56277c1880ea <unknown>\n#9 0x56277c189225 <unknown>\n#10 0x56277c39e2dd <unknown>\n#11 0x56277c3a22c7 <unknown>\n#12 0x56277c38822e <unknown>\n#13 0x56277c3a30a8 <unknown>\n#14 0x56277c37cbc0 <unknown>\n#15 0x56277c3bf6c8 <unknown>\n#16 0x56277c3bf848 <unknown>\n#17 0x56277c3d9c0d <unknown>\n#18 0x7f72adb4b609 <unknown>\n"
+}
