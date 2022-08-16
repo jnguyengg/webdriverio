@@ -52,7 +52,7 @@ class LoginPage extends Page {
     }
     async validateUserName(){
         await this.userText.getText();
-        await expect(this.userText).toHaveTextContaining('Automation Useraaa');
+        await expect(this.userText).toHaveTextContaining('Automation User');
     }
 
     /*
