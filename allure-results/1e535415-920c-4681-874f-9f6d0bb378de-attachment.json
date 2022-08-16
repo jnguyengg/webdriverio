@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"svg\"}\n  (Session info: headless chrome=104.0.5112.81)",
-  "stacktrace": "Backtrace:\n\tOrdinal0 [0x008A6463+2188387]\n\tOrdinal0 [0x0083E461+1762401]\n\tOrdinal0 [0x00753D78+802168]\n\tOrdinal0 [0x00781880+989312]\n\tOrdinal0 [0x00781B1B+989979]\n\tOrdinal0 [0x007AE912+1173778]\n\tOrdinal0 [0x0079C824+1099812]\n\tOrdinal0 [0x007ACC22+1166370]\n\tOrdinal0 [0x0079C5F6+1099254]\n\tOrdinal0 [0x00776BE0+945120]\n\tOrdinal0 [0x00777AD6+948950]\n\tGetHandleVerifier [0x00B471F2+2712546]\n\tGetHandleVerifier [0x00B3886D+2652765]\n\tGetHandleVerifier [0x0093002A+520730]\n\tGetHandleVerifier [0x0092EE06+516086]\n\tOrdinal0 [0x0084468B+1787531]\n\tOrdinal0 [0x00848E88+1805960]\n\tOrdinal0 [0x00848F75+1806197]\n\tOrdinal0 [0x00851DF1+1842673]\n\tBaseThreadInitThunk [0x76BCFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77057A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77057A6E+238]\n"
-}
