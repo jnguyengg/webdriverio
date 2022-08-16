@@ -1,4 +1,4 @@
-name: allure reports
+name: webdriverio-allure-ci
 
 on: workflow_dispatch
   
