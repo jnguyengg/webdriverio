@@ -1,53 +1,26 @@
-name: webdriverio-allure-ci
+name: webdriverio
 
 on: workflow_dispatch
-  
+    
+    
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-        cache: 'npm'
-    - run: npm ci
-    - run: npm install
-    - run: BROWSERSTACK_USERNAME=${{secrets.BROWSERSTACK_USERNAME}} BROWSERSTACK_ACCESS_KEY=${{secrets.BROWSERSTACK_ACCESS_KEY}} npm run wdio
-  
-    - uses: actions/upload-artifact@master
-      with:
-        name: allure-results
-        path: allure-results
-        retention-days: 20
-        
-    - name: Get Allure history
-      uses: actions/checkout@v2
-      if: always()
-      continue-on-error: true
-      with:
-        ref: gh-pages
-        path: gh-pages
-    
-    - name: Test marketplace action
-      uses: simple-elf/allure-report-action@master
-      if: always()
-      id: allure-report
-      with:
-        allure_results: allure-results
-        gh_pages: gh-pages
-        allure_report: allure-report
-        allure_history: allure-history
-        keep_reports: 20
-
-    - name: Deploy report to Github Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: allure-history
+        - name: Checkout
+          uses: actions/checkout@v2
+        - uses: actions/setup-node@v1
+          with:
+            node-version: 16.3.0
+        - name: Install
+          run: npm install
+        - name: Test
+          run: BROWSERSTACK_USERNAME=${{secrets.BROWSERSTACK_USERNAME}} BROWSERSTACK_ACCESS_KEY=${{secrets.BROWSERSTACK_ACCESS_KEY}} npm run wdio
+        - uses: actions/upload-artifact@v1
+          if: failure()
+          with:
+            name: logs
+            path: logs
