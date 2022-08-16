@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Aug 16 18:04:34 GMT 2022","Tue Aug 16 18:04:41 GMT 2022","7637","","Smoke Tests","","Smoke Tests","Validate Warehouse Dashboards Page","Validate Warehouse Dashboards Page",""
+"passed","Tue Aug 16 18:04:23 GMT 2022","Tue Aug 16 18:04:28 GMT 2022","5089","","Smoke Tests","","Smoke Tests","Validate Fulfillment Dashboards Page","Validate Fulfillment Dashboards Page",""
+"passed","Tue Aug 16 18:04:08 GMT 2022","Tue Aug 16 18:04:13 GMT 2022","5262","","Smoke Tests","","Smoke Tests","Validate Executive Dashboards Page","Validate Executive Dashboards Page",""
+"passed","Tue Aug 16 18:04:13 GMT 2022","Tue Aug 16 18:04:23 GMT 2022","9859","","Smoke Tests","","Smoke Tests","Validate Accounting Dashboards Page","Validate Accounting Dashboards Page",""
+"passed","Tue Aug 16 18:04:28 GMT 2022","Tue Aug 16 18:04:34 GMT 2022","5443","","Smoke Tests","","Smoke Tests","Validate Sales Dashboards Page","Validate Sales Dashboards Page",""
+"passed","Tue Aug 16 18:03:54 GMT 2022","Tue Aug 16 18:04:08 GMT 2022","13716","","Smoke Tests","","Smoke Tests","Validate Login Success","Validate Login Success",""
