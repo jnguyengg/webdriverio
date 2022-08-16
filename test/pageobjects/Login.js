@@ -18,7 +18,7 @@ class LoginPage extends Page {
         
     }
     get usernameCredentials(){
-        let loginuid = "svc_automation"
+        let loginuid = "svc_automatioaaa"
         //let user = atob(loginuid);
         
         return loginuid
