@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li[@path='/dashboard/accounting']\"}\n  (Session info: headless chrome=104.0.5112.79)",
+  "stacktrace": "#0 0x556be747fb13 <unknown>\n#1 0x556be7286688 <unknown>\n#2 0x556be72bdcc7 <unknown>\n#3 0x556be72bde91 <unknown>\n#4 0x556be72f0e34 <unknown>\n#5 0x556be72db8dd <unknown>\n#6 0x556be72eeb94 <unknown>\n#7 0x556be72db7a3 <unknown>\n#8 0x556be72b10ea <unknown>\n#9 0x556be72b2225 <unknown>\n#10 0x556be74c72dd <unknown>\n#11 0x556be74cb2c7 <unknown>\n#12 0x556be74b122e <unknown>\n#13 0x556be74cc0a8 <unknown>\n#14 0x556be74a5bc0 <unknown>\n#15 0x556be74e86c8 <unknown>\n#16 0x556be74e8848 <unknown>\n#17 0x556be7502c0d <unknown>\n#18 0x7f1f269d8609 <unknown>\n"
+}
