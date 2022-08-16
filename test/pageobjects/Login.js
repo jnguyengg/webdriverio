@@ -18,7 +18,7 @@ class LoginPage extends Page {
         
     }
     get usernameCredentials(){
-        let loginuid = "svc_automatioaaa"
+        let loginuid = "svc_automation"
         //let user = atob(loginuid);
         
         return loginuid
@@ -52,7 +52,7 @@ class LoginPage extends Page {
     }
     async validateUserName(){
         await this.userText.getText();
-        await expect(this.userText).toHaveTextContaining('Automation User');
+        await expect(this.userText).toHaveTextContaining('Automation Useraaa');
     }
 
     /*
