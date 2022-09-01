@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"svg\"}\n  (Session info: headless chrome=104.0.5112.101)",
+  "stacktrace": "#0 0x55e998f57b13 <unknown>\n#1 0x55e998d5e688 <unknown>\n#2 0x55e998d95cc7 <unknown>\n#3 0x55e998d95e91 <unknown>\n#4 0x55e998dc8e34 <unknown>\n#5 0x55e998db38dd <unknown>\n#6 0x55e998dc6b94 <unknown>\n#7 0x55e998db37a3 <unknown>\n#8 0x55e998d890ea <unknown>\n#9 0x55e998d8a225 <unknown>\n#10 0x55e998f9f2dd <unknown>\n#11 0x55e998fa32c7 <unknown>\n#12 0x55e998f8922e <unknown>\n#13 0x55e998fa40a8 <unknown>\n#14 0x55e998f7dbc0 <unknown>\n#15 0x55e998fc06c8 <unknown>\n#16 0x55e998fc0848 <unknown>\n#17 0x55e998fdac0d <unknown>\n#18 0x7f630fdec609 <unknown>\n"
+}

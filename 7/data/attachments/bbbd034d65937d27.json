@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//i[@class='fa fa-dashboard fa-fw']\"}\n  (Session info: headless chrome=104.0.5112.79)",
-  "stacktrace": "#0 0x55895d624b13 <unknown>\n#1 0x55895d42b688 <unknown>\n#2 0x55895d462cc7 <unknown>\n#3 0x55895d462e91 <unknown>\n#4 0x55895d495e34 <unknown>\n#5 0x55895d4808dd <unknown>\n#6 0x55895d493b94 <unknown>\n#7 0x55895d4807a3 <unknown>\n#8 0x55895d4560ea <unknown>\n#9 0x55895d457225 <unknown>\n#10 0x55895d66c2dd <unknown>\n#11 0x55895d6702c7 <unknown>\n#12 0x55895d65622e <unknown>\n#13 0x55895d6710a8 <unknown>\n#14 0x55895d64abc0 <unknown>\n#15 0x55895d68d6c8 <unknown>\n#16 0x55895d68d848 <unknown>\n#17 0x55895d6a7c0d <unknown>\n#18 0x7f8490490609 <unknown>\n"
-}
